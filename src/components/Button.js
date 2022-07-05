@@ -1,5 +1,9 @@
 import "./Button.css";
 
-export function Button() {
-  return <button className="btn">Whatever!</button>;
+export function Button(props) {
+  return (
+    <button className="btn" onClick={props.onClick}>
+      Whatever!
+    </button>
+  );
 }
